@@ -141,7 +141,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 # Managed-service cloud provisioning secrets (cloud-provision / deploy/cloud).
 # Vendor credentials live in the env or a gitignored secrets file, never the
 # repo (audit §1/§14). Belt-and-braces so a local copy can never be committed.
@@ -207,7 +206,6 @@ cython_debug/
 .cursorindexingignore
 
 # vcscode
-.vscode
 
 # Marimo
 marimo/_static/
@@ -303,3 +301,4 @@ packages/sie_cloud/bench/results/dev-us-*/
 # Personal mise overrides (per-developer toolchain tweaks, e.g. rustup
 # component naming differences across rustup versions).
 mise.local.toml
+config.bat

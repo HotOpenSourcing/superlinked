@@ -5,11 +5,11 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx src/server.ts",
-    "build": "tsc",
+    "dev": "node init && tsx src/server.ts",
+    "build": "node init && tsc",
     "ingest": "tsx src/ingest.ts",
     "search": "tsx src/search.ts",
-    "start": "node dist/server.js",
+    "start": "node init && node dist/server.js",
     "clean": "rm -rf dist node_modules"
   },
   "dependencies": {

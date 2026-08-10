@@ -7,7 +7,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "start": "docker compose up -d && tsx web/server.ts",
+    "start": "node init && docker compose up -d && tsx web/server.ts",
     "ui": "tsx web/server.ts",
     "index": "tsx src/index-build.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit"

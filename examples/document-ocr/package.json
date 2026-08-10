@@ -7,8 +7,8 @@
     "node": ">=22"
   },
   "scripts": {
-    "start": "docker compose up -d && tsx web/server.ts",
-    "start:gpu": "docker compose -f compose.gpu.yml up -d && tsx web/server.ts",
+    "start": "node init && docker compose up -d && tsx web/server.ts",
+    "start:gpu": "node init && docker compose -f compose.gpu.yml up -d && tsx web/server.ts",
     "ui": "tsx web/server.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "regen-samples": "python3 scripts/generate_samples.py"
