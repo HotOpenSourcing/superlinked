@@ -2,7 +2,7 @@
   "name": "sie-typescript-monorepo",
   "private": true,
   "scripts": {
-    "build": "pnpm -r run build",
+    "build": "node init && pnpm -r run build",
     "test": "pnpm -r run test",
     "typecheck": "pnpm -r run typecheck",
     "lint": "pnpm -r run lint"
